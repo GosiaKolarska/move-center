@@ -1,0 +1,171 @@
+.formSection {
+    position: relative;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 35.5%, #000000 100%), url('../../assets/images/form.png');
+    background-size: cover;
+    background-position: center;
+    padding: 90px 20px 80px;
+    color: white;
+    text-align: center;
+    background-repeat: no-repeat;
+  }
+  
+  .overlay {
+    max-width: 880px;
+    margin: 0 auto;
+  }
+  
+  .title {
+    font-size: 40px;
+    font-weight: 500;
+    font-family: 'GeneralSans-Medium', sans-serif;
+    line-height: 48px;
+    letter-spacing: -0.02em;
+    text-align: center;
+  }
+  
+  .description {
+    margin-bottom: 14px;
+    color: #c8c8c8;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'GeneralSans-Medium', sans-serif;
+    line-height: 27px;
+    letter-spacing: -0.01em;
+    text-align: center;
+    padding-top: 24px;
+  }
+  
+  .form {
+
+  }
+
+  .formInner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+  
+  .formGroup {
+    text-align: left;
+  }
+  
+  .formGroup:nth-child(1),
+  .formGroup:nth-child(2) {
+    max-width: 424px;
+    width: 100%;
+  }
+  
+  .formGroup:nth-child(3) {
+    width: 100%;
+  }
+  
+  .label {
+    display: block;
+    margin-bottom: 12px;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'GeneralSans-Medium', sans-serif;
+    line-height: 28px;
+    text-align: left;
+    color: #c8c8c8;
+  }
+  
+  .input {
+    width: 100%;
+    padding: 14px 15px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    border: 1px solid #ffffff38;
+    background: #080808;
+    box-sizing: border-box;
+    color: #ffffffb2;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'GeneralSans-Medium', sans-serif;
+    line-height: 28px;
+    text-align: left;
+
+  }
+  
+  .formGroupCheckbox {
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+    text-align: left;
+    padding-top: 32px;
+  }
+  
+  .checkbox {
+    margin-right: 16px;
+    width: 24px;
+    height: 24px;
+    min-height: 24px;
+    min-width: 24px;
+  }
+  
+  .checkboxLabel {
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'GeneralSans-Regular';
+    line-height: 28px;
+    text-align: left;
+    color: #c8c8c8;
+  }
+  
+  .submitButton {
+    background: #1c48e5;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'GeneralSans-Medium', sans-serif;
+    line-height: 32px;
+    text-align: center;
+    border: unset;
+    color: #fff;
+    border-radius: 42px;
+    padding: 14px 0;
+    width: 100%;
+    transition: .3s;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    margin-top: 24px;
+  }
+  
+  .submitButton:hover {
+    background-color: #132f91;
+  }
+  
+
+  @media screen and (max-width: 768px) {
+    .formSection {
+      padding: 142px 30px 83px;
+    }
+
+    .formGroup:nth-child(1),
+    .formGroup:nth-child(2) {
+      max-width: unset;
+    }
+
+    .title {
+      text-align: left;
+      font-size: 36px;
+      line-height: 43.2px;
+    }
+
+    .description {
+      text-align: left;
+      font-size: 16px;
+      line-height: 21.6px;
+      padding-top: 5px;
+      margin-bottom: 30px;
+    }
+
+    .formGroupCheckbox {
+      padding-top: 12px;
+    }
+
+    .submitButton {
+      margin-top: 13px;
+    }
+  }

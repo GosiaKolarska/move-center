@@ -1,0 +1,200 @@
+.hero {
+    position: relative;
+    background-image: url('../../assets/images/herobackground.png');
+    background-size: cover;
+    background-position: center;
+    padding: 390px 20px 40px;
+    color: white;
+    text-align: center;
+}
+
+.heroContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+}
+
+.heroContentColumn {
+    max-width: 630px;
+    width: 100%;
+    text-align: left;
+}
+
+.heroContentColumn:nth-child(2) {
+    max-width: 370px;
+    width: 100%;
+    padding-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.recommendation {
+    padding: 12px 12px;
+    border-radius: 100px;
+    border: 1px solid #FFFFFF14;
+    background: #FFFFFF0D;
+    display: inline-block;
+    align-items: center;
+    justify-content: start;
+    margin: 0;
+    font-size: 14px;
+    line-height: 18.9px;
+    letter-spacing: -0.01em;
+    text-align: left;
+}
+
+.recommendation img {
+    margin-right: 6px;
+    vertical-align: middle;
+}
+
+h1 {
+    font-size: 72px;
+    font-weight: 500;
+    font-family: 'GeneralSans-Medium';
+    line-height: 72px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    color: #fff;
+    margin-top: 11px;
+    margin-bottom: 23px;
+}
+
+.subText {
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'GeneralSans-Medium';
+    line-height: 27px;
+    letter-spacing: -0.01em;
+    text-align: left;
+    color: #C8C8C8;
+    padding-right: 40px;
+}
+
+.ctaButton {
+    background-color: #1C48E5;
+    color: white;
+    padding: 18px 30px;
+    text-align: center;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'GeneralSans-Medium';
+    line-height: 27px;
+    letter-spacing: -0.02em;
+    margin-bottom: 40px;
+    transition: .3s;
+}
+
+.ctaButton:hover {
+    background-color: #132f91;
+}
+
+.reviews {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.rating {
+    display: flex;
+    flex-direction: column;
+    max-width: 146px;
+    width: 100%;
+    gap: 8px;
+}
+
+.ratingScore {
+    font-size: 13.94px;
+    font-weight: 500;
+    font-family: 'GeneralSans-Medium';
+    line-height: 18.82px;
+    letter-spacing: -0.02em;
+    text-align: left;
+}
+
+.ratingStars {
+    color: #FD8F12;
+    letter-spacing: 6px;
+}
+
+.ratingRevies {
+    font-size: 13.94px;
+    font-weight: 500;
+    font-family: 'GeneralSans-Medium';
+    line-height: 18.82px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    color: #fff;
+    margin: 0;
+    margin-right: 6px;
+}
+
+.ratingRow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.reviewers {
+    display: flex;
+    gap: 5px;
+}
+
+.reviewerImage {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: -13px;
+}
+
+@media screen and (max-width: 768px) {
+    .hero {
+        background-image: url('../../assets/images/herobackgroundmobile.png');
+        padding: 0;
+    }
+
+    .heroContent {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-top: 290px;
+    }
+
+    h1 {
+        font-size: 36px;
+        font-weight: 500;
+        line-height: 43.2px;
+        letter-spacing: -0.02em;
+        text-align: left;
+        margin-bottom: 0;
+    }
+
+    .subText {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 21.6px;
+        letter-spacing: -0.01em;
+        margin-top: 10px;
+        margin-bottom: 32px;
+    }
+
+    .ctaButton {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 24.3px;
+        letter-spacing: -0.02em;
+        margin-bottom: 23px;
+    }
+
+    .heroContentColumn {
+        max-width: 330px;
+    }
+
+    .heroContentColumn:nth-child(2) {
+        max-width: 330px;
+    }
+}

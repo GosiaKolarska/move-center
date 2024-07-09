@@ -1,0 +1,156 @@
+.topBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #141414; 
+    color: #fff;
+    padding: 16px 0;
+}
+
+.topBar > div {
+    align-items: center;
+}
+
+.topBarContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.topBarLogo {
+    display: flex;
+}
+
+.topBarLogoImage {
+    max-width: 100%;
+    height: auto;
+}
+
+.topBarContactInfo {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.topBarContactInfoWrapper {
+    display: flex;
+    align-items: flex-end;
+    gap: 10px;
+}
+
+.topBarProfileImageWrapper {
+    position: relative;
+    display: flex;
+}
+
+.topBarProfileImage {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+}
+
+.topBarProfileImageWrapper:before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    border: 3px solid #141414;
+    background-color: #16A249;
+    display: inline-block;
+    position: absolute;
+    bottom: -3px;
+    right: -3px;
+    border-radius: 50%;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.topBarTextInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.topBarPhone,
+.topBarName {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'GeneralSans-Medium';
+    line-height: 28px;
+    letter-spacing: -0.1px;
+    text-align: left;
+    color: #FFFFFF;
+
+}
+
+.topBarContact,
+.topBarSubtitle {
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'GeneralSans-Medium';
+    line-height: 16px;
+    letter-spacing: -0.1px;
+    text-align: left;
+    margin: 0;
+    color: #C8C8C8;
+}
+
+.topBarContactDetails {
+    margin-right: 20px;
+    text-align: right;
+}
+
+.topBarPhone,
+.topBarContact {
+    margin: 0;
+}
+
+.topBarConsultButton {
+    background: #1C48E5;
+    border: 1px solid #2463EB;
+    color: #fff;
+    padding: 7px 20px;
+    border-radius: 32px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'GeneralSans-Medium';
+    line-height: 28px;
+    letter-spacing: -0.01em;
+    text-align: center;
+    transition: .3s;
+}
+
+.topBarConsultButton:hover {
+    background-color: #132f91;
+}
+
+@media screen and (max-width: 768px) {
+    .topBar {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 9;
+        background: unset;
+        padding: 20px 0;
+    }
+
+    .topBarContactInfo {
+        flex-wrap: wrap;
+    }
+
+    .topBarContactInfo {
+        display: none;
+    }
+}

@@ -1,0 +1,87 @@
+.opinions {
+  text-align: center;
+  padding: 90px 0 50px;
+}
+
+.subtitle {
+  font-size: 18px;
+  font-family: 'GeneralSans-Semibold', sans-serif;
+  line-height: 28px;
+  letter-spacing: -0.01em;
+  text-align: center; 
+  color: #4A4A4A;
+}
+
+.title {
+  font-family: 'GeneralSans-Medium', sans-serif;
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 50.4px;
+  letter-spacing: -0.02em;
+  text-align: center;
+  margin-top: 0;
+}
+
+.videosContainer {
+  padding-top: 5px;
+}
+
+.scrollContainer {
+  display: flex;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x mandatory;
+}
+
+.videoWrapper {
+  position: relative;
+  flex: 0 0 auto;
+  height: 650px;
+  width: calc(100% / 4);
+  max-width: 100%;
+  background: #000;
+  scroll-snap-align: center;
+}
+
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .opinions {
+    padding-bottom: 0;
+  }
+  .videoWrapper {
+    flex: 0 0 34%;
+    height: 470px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .opinions {
+    padding: 40px 0 0;
+  }
+
+  .subtitle {
+    line-height: 24px;
+  }
+
+  .title {
+    font-size: 28px;
+    line-height: 37.8px;
+    text-align: center;
+  }
+
+  .videosContainer {
+    padding-top: 15px;
+  }
+
+  .videoWrapper {
+    flex: 0 0 66%;
+    height: 470px;
+  }
+}
