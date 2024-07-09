@@ -33,7 +33,7 @@ function Form() {
   };
 
   return (
-    <section className={styles.formSection}>
+    <section id="form" className={styles.formSection}>
       <div className={styles.overlay}>
         <h2 className={styles.title}>
           Zapisz się na darmową konsultację<span className="blue">.</span>

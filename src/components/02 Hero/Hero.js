@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./Hero.module.css";
+import { smoothScroll } from "../../utils/scrollUtilis";
 
 import iconHeart from "../../assets/images/icon-heart.png";
 import iconGoogle from "../../assets/images/logo-google.png";
@@ -27,7 +28,9 @@ function Hero({ recommenderName }) {
             </p>
           </div>
           <div className={styles.heroContentColumn}>
-            <a className={styles.ctaButton}>Odbieram trening za 0 zł</a>
+            <a href="#form" className={styles.ctaButton} onClick={smoothScroll}>
+              Odbieram trening za 0 zł
+            </a>
             <div className={styles.reviews}>
               <div className={styles.rating}>
                 <div className={styles.ratingRow}>

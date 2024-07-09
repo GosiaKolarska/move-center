@@ -87,6 +87,7 @@ h1 {
     letter-spacing: -0.02em;
     margin-bottom: 40px;
     transition: .3s;
+    text-decoration: none;
 }
 
 .ctaButton:hover {

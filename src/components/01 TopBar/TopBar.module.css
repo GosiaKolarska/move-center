@@ -130,6 +130,7 @@
     letter-spacing: -0.01em;
     text-align: center;
     transition: .3s;
+    text-decoration: none;
 }
 
 .topBarConsultButton:hover {

@@ -1,5 +1,5 @@
 import React from "react";
-
+import { smoothScroll } from "../../utils/scrollUtilis";
 import star from "../../assets/images/icon-star.png";
 import like from "../../assets/images/icon-like.png";
 import rect from "../../assets/images/icon-rect.png";
@@ -58,10 +58,14 @@ function AboutUs() {
             <li>Przestrzenna siłownia</li>
             <li>Darmowy parking</li>
           </ul>
-          <a className={styles.button}>Umów się za darmo</a>
+          <a href="#form" className={styles.button} onClick={smoothScroll}>
+            Umów się za darmo
+          </a>
         </div>
       </div>
-      <a className={styles.buttonMobile}>Umów się za darmo</a>
+      <a href="#form" className={styles.buttonMobile} onClick={smoothScroll}>
+        Umów się za darmo
+      </a>
     </section>
   );
 }

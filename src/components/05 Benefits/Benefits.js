@@ -1,5 +1,7 @@
 import React from "react";
 import styles from "./Benefits.module.css";
+
+import { smoothScroll } from "../../utils/scrollUtilis";
 import trainersImage from "../../assets/images/trainers.png";
 
 function Benefits() {
@@ -29,9 +31,13 @@ function Benefits() {
               dodatkową oszczędność.
             </li>
           </ul>
-          <button className={styles.benefits__button}>
+          <a
+            href="#form"
+            className={styles.benefits__button}
+            onClick={smoothScroll}
+          >
             Odbieram trening za 0 zł
-          </button>
+          </a>
         </div>
         <div className={styles.benefits__imageContainer}>
           <img

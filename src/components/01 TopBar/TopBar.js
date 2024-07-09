@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./TopBar.module.css";
+import { smoothScroll } from "../../utils/scrollUtilis";
 import logo from "../../assets/images/logo.png";
 
 function TopBar({ trainerName, trainerSubtitle, phone, profileImageSrc }) {
@@ -27,7 +28,11 @@ function TopBar({ trainerName, trainerSubtitle, phone, profileImageSrc }) {
             <p className={styles.topBarPhone}>+{phone}</p>
             <p className={styles.topBarContact}>Kontakt</p>
           </div>
-          <a className={styles.topBarConsultButton}>
+          <a
+            href="#form"
+            className={styles.topBarConsultButton}
+            onClick={smoothScroll}
+          >
             Zapisz się na <b>darmową</b> konsultację
           </a>
         </div>
