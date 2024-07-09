@@ -20,7 +20,8 @@ function Hero({ recommenderName }) {
               Poleca <b>{recommenderName}</b>
             </p>
             <h1>
-              Odbierz Darmowy Trening<span className="blue">.</span>
+              Odbierz <br />
+              Darmowy Trening<span className="blue">.</span>
             </h1>
             <p className={styles.subText}>
               Twój znajomy polecił Cię w Move Center. Dlatego możesz odebrać
