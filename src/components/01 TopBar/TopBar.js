@@ -24,7 +24,7 @@ function TopBar({ trainerName, trainerSubtitle, phone, profileImageSrc }) {
             </div>
           </div>
           <div className={styles.topBarContactDetails}>
-            <p className={styles.topBarPhone}>{phone}</p>
+            <p className={styles.topBarPhone}>+{phone}</p>
             <p className={styles.topBarContact}>Kontakt</p>
           </div>
           <a className={styles.topBarConsultButton}>
