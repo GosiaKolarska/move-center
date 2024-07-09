@@ -2,7 +2,7 @@
   "name": "move-center",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://gosiakolarska.github.io/move-center",
+  "homepage": "https://move-center-five.vercel.app/",
   "dependencies": {
     "@sanity/client": "^6.20.1",
     "@sanity/image-url": "^1.0.2",
