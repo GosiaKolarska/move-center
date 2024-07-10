@@ -3,7 +3,7 @@
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 35.5%, #000000 100%), url('../../assets/images/form.png');
     background-size: cover;
     background-position: center;
-    padding: 90px 20px 80px;
+    padding: 70px 30px 60px;
     color: white;
     text-align: center;
     background-repeat: no-repeat;
@@ -139,7 +139,7 @@
 
   @media screen and (max-width: 768px) {
     .formSection {
-      padding: 142px 30px 83px;
+      padding: 124px 30px 56px;
     }
 
     .formGroup:nth-child(1),
