@@ -14,7 +14,12 @@ function FAQItem({ question, answer }) {
           className={`${styles.icon} ${isOpen ? styles.iconOpen : ""}`}
         />
       </div>
-      {isOpen && <div className={styles.answer}>{answer}</div>}
+      {isOpen && (
+        <div
+          className={styles.answer}
+          dangerouslySetInnerHTML={{ __html: answer }}
+        />
+      )}
     </div>
   );
 }
