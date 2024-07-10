@@ -94,3 +94,8 @@ b {
 .ytp-chrome-top.ytp-show-cards-title {
   display: none;
 }
+
+a:focus {
+  outline: 1px solid #79e51c;
+  outline-offset: 2px;
+}
