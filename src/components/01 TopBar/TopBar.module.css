@@ -173,7 +173,14 @@
     background-color: #132f91;
 }
 
+.topBarMobile {
+    display: none;
+}
+
 @media screen and (max-width: 768px) {
+    .topBarWrapper {
+        position: absolute;
+    }
     .topBar {
         position: absolute;
         top: 0;
@@ -197,4 +204,40 @@
     .topBarContactInfo {
         display: none;
     }
+
+    .topBarMobile {
+        display: flex;
+        position: fixed;
+        width: -webkit-fill-available;
+        top: 0;
+        left: 0;
+        padding: 20px 20px;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 99;
+        backdrop-filter: blur(77px);
+        background: #141414;
+        transition: opacity 0.3s ease, visibility 0.3s ease;
+        opacity: 0;
+        visibility: hidden;
+      }
+
+      .topBarMobile.visible {
+        opacity: 1;
+        visibility: visible;
+      }
+      
+      .topBarMobile.hidden {
+        opacity: 0;
+        visibility: hidden;
+      }
+
+      .topBarContactInfoWrapper {
+        align-items: center;
+      }
+
+      .topBarPhoneMobile {
+        display: flex;
+      }
+      
 }
