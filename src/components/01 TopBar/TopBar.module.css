@@ -165,6 +165,13 @@
         background: unset;
         padding: 20px 0;
     }
+    .topBar > div {
+        padding: 0 20px;
+    }
+
+    .topBarLogoImage {
+        max-width: 182px;
+    }
 
     .topBarContactInfo {
         flex-wrap: wrap;

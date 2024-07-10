@@ -1,18 +1,57 @@
 .hero {
     position: relative;
-    background-image: url('../../assets/images/herobackground.png');
-    background-size: cover;
-    background-position: center;
-    padding: 466px 20px 40px;
     color: white;
     text-align: center;
+    padding-top: 76px;
+    overflow: hidden;
+    min-height: 724px;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: flex-end;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 17.5%, #000000 100%);
+}
+
+.heroBgBelow, .heroBgAbove {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -3;
+}
+
+.heroBgAbove {
+    z-index: -1;
+}
+
+.move {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 936px;
+    height: 248px;
+    transform: translate(-50%, -50%);
+    transition: transform 0.1s;
+    z-index: -2;
 }
 
 .heroContent {
+    padding: 40px 0;
+    margin-top: -80px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.heroContent > div {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
     width: 100%;
+    height: 100%;
 }
 
 .heroContentColumn {
@@ -155,16 +194,46 @@ h1 {
     margin-left: -13px;
 }
 
+
+
 @media screen and (max-width: 768px) {
     .hero {
-        background-image: url('../../assets/images/herobackgroundmobile.png');
-        padding: 0;
+        padding-top: 337px;
+        min-height: unset;
+        background: #010101;
+        z-index: -4;
+    }
+
+    .hero .heroContent > div {
+        flex-direction: column;
+    }
+
+    .heroBgBelow, .heroBgAbove {
+        height: 312px;
+        top: 0;
+        left: 4px;
+    }
+
+    .heroBgAbove {
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 17.5%, #000000 100%);
+
+    }
+
+    .move {
+        left: 50%;
+        top: 124px;
+        translate: unset;
+        width: 363px;
+        height: auto;
     }
 
     .heroContent {
+        padding: 20px 0 125px;
+    }
+
+    .heroContent > .container {
         flex-direction: column;
         align-items: flex-start;
-        padding-top: 290px;
     }
 
     h1 {
@@ -174,6 +243,7 @@ h1 {
         letter-spacing: -0.02em;
         text-align: left;
         margin-bottom: 0;
+        margin-top: 8px;
     }
 
     .subText {
@@ -199,5 +269,19 @@ h1 {
 
     .heroContentColumn:nth-child(2) {
         max-width: unset;
+    }
+
+    .subText {
+        padding-right: 0;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .move {
+        left: 204px;
+        top: 124px;
+        translate: unset;
+        width: 363px;
+        height: auto;
     }
 }

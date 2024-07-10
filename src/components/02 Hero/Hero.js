@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styles from "./Hero.module.css";
 import { smoothScroll } from "../../utils/scrollUtilis";
 
@@ -9,11 +9,43 @@ import reviewer1 from "../../assets/images/review1.png";
 import reviewer2 from "../../assets/images/review2.png";
 import reviewer3 from "../../assets/images/review3.png";
 
+import heroBgBelow from "../../assets/images/hero-bg-below.png";
+import { ReactComponent as MoveImage } from "../../assets/images/move.svg";
+import heroBgAbove from "../../assets/images/hero-bg-above.png";
+
 function Hero({ recommenderName }) {
+  useEffect(() => {
+    const handleMouseMove = (e) => {
+      if (window.innerWidth >= 1024) {
+        const moveElement = document.querySelector(`.${styles.move}`);
+        const x = (e.clientX - window.innerWidth / 2) * 0.01;
+        const y = (e.clientY - window.innerHeight / 2) * 0.01;
+        moveElement.style.left = `calc(51% + ${x}px)`;
+        moveElement.style.top = `calc(43% + ${y}px)`;
+      }
+    };
+
+    window.addEventListener("mousemove", handleMouseMove);
+    return () => {
+      window.removeEventListener("mousemove", handleMouseMove);
+    };
+  }, []);
+
   return (
     <section className={styles.hero}>
-      <div className="container flex">
-        <div className={styles.heroContent}>
+      <img
+        src={heroBgBelow}
+        alt="Background below"
+        className={styles.heroBgBelow}
+      />
+      <MoveImage className={styles.move} />
+      <img
+        src={heroBgAbove}
+        alt="Background above"
+        className={styles.heroBgAbove}
+      />
+      <div className={styles.heroContent}>
+        <div className="container flex">
           <div className={styles.heroContentColumn}>
             <div className={styles.recommendation}>
               <IconHeart />
