@@ -8,7 +8,7 @@ import defaultProfileImageSrc from "../../assets/images/profile.png";
 
 const defaultTrainerName = "Piotr Piechnik";
 const defaultTrainerSubtitle = "Trener fizjoterapeuta";
-const defaultPhone = "48 667 745 056";
+const defaultPhone = "+48 667 745 056";
 
 function TopBar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -55,7 +55,7 @@ function TopBar() {
                 </div>
               </div>
               <div className={styles.topBarContactDetails}>
-                <p className={styles.topBarPhone}>+{defaultPhone}</p>
+                <p className={styles.topBarPhone}>{defaultPhone}</p>
                 <p className={styles.topBarContact}>Kontakt</p>
               </div>
               <a
