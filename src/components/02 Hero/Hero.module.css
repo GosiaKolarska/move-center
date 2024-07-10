@@ -28,11 +28,11 @@
 
 .move {
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 43%;
+    left: 51%;
     width: 936px;
     height: 248px;
-    transform: translate(-50%, -50%);
+    transform: translate(-51%, -43%);
     transition: transform 0.1s;
     z-index: -2;
 }
@@ -68,6 +68,25 @@
     flex-direction: column;
 }
 
+.recommendationWrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.recommendationWrapper::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    backdrop-filter: blur(77px);
+    -webkit-backdrop-filter: blur(77px);
+    border-radius: 100px;
+    z-index: -1;
+}
+
+
 .recommendation {
     padding: 12px 12px;
     border-radius: 100px;
@@ -84,6 +103,8 @@
     align-items: center;
     justify-content: flex-start;
     gap: 6px;
+    position: relative;
+    z-index: 1;
 }
 
 .recommendation svg {

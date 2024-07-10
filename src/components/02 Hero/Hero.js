@@ -47,9 +47,11 @@ function Hero({ recommenderName }) {
       <div className={styles.heroContent}>
         <div className="container flex">
           <div className={styles.heroContentColumn}>
-            <div className={styles.recommendation}>
-              <IconHeart />
-              Poleca <b>{recommenderName}</b>
+            <div className={styles.recommendationWrapper}>
+              <div className={styles.recommendation}>
+                <IconHeart />
+                Poleca <b>{recommenderName}</b>
+              </div>
             </div>
             <h1>
               Odbierz <br />
