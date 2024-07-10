@@ -3,10 +3,10 @@ import styles from "./Opinions.module.css";
 
 function Opinions() {
   const videos = [
-    "https://www.youtube.com/embed/dYWeaSfR8iE",
-    "https://www.youtube.com/embed/EhKbkauZFxs",
-    "https://www.youtube.com/embed/zrxX4iISBPc",
-    "https://www.youtube.com/embed/cDsNmv2kHLw",
+    "https://www.youtube.com/embed/dYWeaSfR8iE?controls=0&modestbranding=1&showinfo=0&rel=0&iv_load_policy=3",
+    "https://www.youtube.com/embed/EhKbkauZFxs?controls=0&modestbranding=1&showinfo=0&rel=0&iv_load_policy=3",
+    "https://www.youtube.com/embed/zrxX4iISBPc?controls=0&modestbranding=1&showinfo=0&rel=0&iv_load_policy=3",
+    "https://www.youtube.com/embed/cDsNmv2kHLw?controls=0&modestbranding=1&showinfo=0&rel=0&iv_load_policy=3",
   ];
 
   return (

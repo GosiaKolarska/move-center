@@ -3,7 +3,13 @@ import styles from "./TopBar.module.css";
 import { smoothScroll } from "../../utils/scrollUtilis";
 import { ReactComponent as Logo } from "../../assets/images/logo.svg";
 
-function TopBar({ trainerName, trainerSubtitle, phone, profileImageSrc }) {
+import defaultProfileImageSrc from "../../assets/images/profile.png";
+
+const defaultTrainerName = "Piotr Piechnik";
+const defaultTrainerSubtitle = "Trener fizjoterapeuta";
+const defaultPhone = "48 667 745 056";
+
+function TopBar() {
   return (
     <div className={styles.topBar}>
       <div className="container flex">
@@ -14,18 +20,18 @@ function TopBar({ trainerName, trainerSubtitle, phone, profileImageSrc }) {
           <div className={styles.topBarContactInfoWrapper}>
             <div className={styles.topBarProfileImageWrapper}>
               <img
-                src={profileImageSrc}
-                alt={trainerName}
+                src={defaultProfileImageSrc}
+                alt={defaultTrainerName}
                 className={styles.topBarProfileImage}
               />
             </div>
             <div className={styles.topBarTextInfo}>
-              <p className={styles.topBarName}>{trainerName}</p>
-              <p className={styles.topBarSubtitle}>{trainerSubtitle}</p>
+              <p className={styles.topBarName}>{defaultTrainerName}</p>
+              <p className={styles.topBarSubtitle}>{defaultTrainerSubtitle}</p>
             </div>
           </div>
           <div className={styles.topBarContactDetails}>
-            <p className={styles.topBarPhone}>+{phone}</p>
+            <p className={styles.topBarPhone}>+{defaultPhone}</p>
             <p className={styles.topBarContact}>Kontakt</p>
           </div>
           <a

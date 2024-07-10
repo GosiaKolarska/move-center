@@ -86,3 +86,11 @@ p {
 b {
   font-family: 'GeneralSans-Semibold';
 }
+
+.ytp-title, .ytp-shorts-title-channel {
+  display: none !important;
+}
+
+.ytp-chrome-top.ytp-show-cards-title {
+  display: none;
+}
