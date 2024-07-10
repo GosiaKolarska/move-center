@@ -139,6 +139,7 @@
 
     .benefits > div {
         flex-direction: column;
+        gap: 20px;
     }
 
     .benefits__title {
@@ -162,11 +163,7 @@
     .benefits__button {
         display: block;
         padding: 19px 30px;
-        width: 100%;
-    }
-
-    .benefits__imageContainer {
-        padding-top: 40px;
+        text-align: center;
     }
 }
 

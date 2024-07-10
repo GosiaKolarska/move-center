@@ -194,10 +194,10 @@ h1 {
     }
 
     .heroContentColumn {
-        max-width: 330px;
+        max-width: unset;
     }
 
     .heroContentColumn:nth-child(2) {
-        max-width: 330px;
+        max-width: unset;
     }
 }
