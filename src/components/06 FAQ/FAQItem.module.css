@@ -44,9 +44,3 @@
 .iconOpen {
     transform: rotate(180deg);
 }
-
-@media screen and (max-width: 580px) {
-    .faqItem {
-        padding: 20px 24px;
-    }
-}
