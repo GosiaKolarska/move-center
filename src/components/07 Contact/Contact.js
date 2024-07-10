@@ -1,9 +1,11 @@
 import React from "react";
 import styles from "./Contact.module.css";
+
 import mapImage from "../../assets/images/map.png";
 import locationImage1 from "../../assets/images/location1.png";
 import locationImage2 from "../../assets/images/location2.png";
-import iconOpen from "../../assets/images/icon-openInNewTab.png";
+
+import { ReactComponent as IconOpen } from "../../assets/images/icon-openInNewTab.svg";
 
 function Contact() {
   return (
@@ -25,11 +27,7 @@ function Contact() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img
-              src={iconOpen}
-              className={styles.contact__linkIcon}
-              alt="open in new tab icon"
-            />
+            <IconOpen className={styles.contact__linkIcon} />
             Przejdź do Google Maps
           </a>
           <div className={styles.contact__imagesContainer}>

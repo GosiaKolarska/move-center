@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styles from "./FAQItem.module.css";
-import iconChevron from "../../assets/images/icon-chevron.png";
+
+import { ReactComponent as IconChevron } from "../../assets/images/icon-chevron.svg";
 
 function FAQItem({ question, answer }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -9,9 +10,7 @@ function FAQItem({ question, answer }) {
     <div className={styles.faqItem}>
       <div className={styles.question} onClick={() => setIsOpen(!isOpen)}>
         {question}
-        <img
-          src={iconChevron}
-          alt="Chevron icon"
+        <IconChevron
           className={`${styles.icon} ${isOpen ? styles.iconOpen : ""}`}
         />
       </div>

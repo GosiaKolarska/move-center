@@ -34,7 +34,6 @@
     border-radius: 100px;
     border: 1px solid #FFFFFF14;
     background: #FFFFFF0D;
-    display: inline-block;
     align-items: center;
     justify-content: start;
     margin: 0;
@@ -42,10 +41,13 @@
     line-height: 18.9px;
     letter-spacing: -0.01em;
     text-align: left;
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 6px;
 }
 
-.recommendation img {
-    margin-right: 6px;
+.recommendation svg {
     vertical-align: middle;
 }
 

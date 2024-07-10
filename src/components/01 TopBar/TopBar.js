@@ -1,14 +1,14 @@
 import React from "react";
 import styles from "./TopBar.module.css";
 import { smoothScroll } from "../../utils/scrollUtilis";
-import logo from "../../assets/images/logo.png";
+import { ReactComponent as Logo } from "../../assets/images/logo.svg";
 
 function TopBar({ trainerName, trainerSubtitle, phone, profileImageSrc }) {
   return (
     <div className={styles.topBar}>
       <div className="container flex">
         <a href="/" className={styles.topBarLogo}>
-          <img src={logo} alt="Logo" className={styles.topBarLogoImage} />
+          <Logo className={styles.topBarLogoImage} />
         </a>
         <div className={styles.topBarContactInfo}>
           <div className={styles.topBarContactInfoWrapper}>

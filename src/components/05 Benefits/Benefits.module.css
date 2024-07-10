@@ -81,7 +81,7 @@
     height: 24px;
     min-height: 24px;
     display: inline-block;
-    background-image: url(../../assets/images/icon-check.png);
+    background-image: url(../../assets/images/icon-check.svg);
     background-size: cover;
     background-repeat: no-repeat;
 }

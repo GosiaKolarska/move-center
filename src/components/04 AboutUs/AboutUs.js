@@ -1,9 +1,10 @@
 import React from "react";
 import { smoothScroll } from "../../utils/scrollUtilis";
-import star from "../../assets/images/icon-star.png";
-import like from "../../assets/images/icon-like.png";
-import rect from "../../assets/images/icon-rect.png";
-import pencil from "../../assets/images/icon-pencil.png";
+
+import { ReactComponent as IconStar } from "../../assets/images/icon-star.svg";
+import { ReactComponent as IconLike } from "../../assets/images/icon-like.svg";
+import { ReactComponent as IconRect } from "../../assets/images/icon-rect.svg";
+import { ReactComponent as IconPencil } from "../../assets/images/icon-pencil.svg";
 
 import styles from "./AboutUs.module.css";
 
@@ -14,7 +15,7 @@ function AboutUs() {
         <div className={styles.statsContainer}>
           <div className={styles.stat}>
             <div className={styles.icon}>
-              <img src={rect} alt="rect icon" />
+              <IconRect />
             </div>
             <div className={styles.statText}>
               <p>Doświadczenie</p>
@@ -23,7 +24,7 @@ function AboutUs() {
           </div>
           <div className={styles.stat}>
             <div className={styles.icon}>
-              <img src={like} alt="like icon" />
+              <IconLike />
             </div>
             <div className={styles.statText}>
               <p>Zadowoleni klienci</p>
@@ -32,7 +33,7 @@ function AboutUs() {
           </div>
           <div className={styles.stat}>
             <div className={styles.icon}>
-              <img src={star} alt="star icon" />
+              <IconStar />
             </div>
             <div className={styles.statText}>
               <p>Wykwalifikowani trenerzy</p>
@@ -41,7 +42,7 @@ function AboutUs() {
           </div>
           <div className={styles.stat}>
             <div className={styles.icon}>
-              <img src={pencil} alt="pencil icon" />
+              <IconPencil />
             </div>
             <div className={styles.statText}>
               <p>Powierzchni treningowej</p>

@@ -2,8 +2,8 @@ import React from "react";
 import styles from "./Hero.module.css";
 import { smoothScroll } from "../../utils/scrollUtilis";
 
-import iconHeart from "../../assets/images/icon-heart.png";
-import iconGoogle from "../../assets/images/logo-google.png";
+import { ReactComponent as IconHeart } from "../../assets/images/icon-heart.svg";
+import { ReactComponent as LogoGoogle } from "../../assets/images/logo-google.svg";
 
 import reviewer1 from "../../assets/images/review1.png";
 import reviewer2 from "../../assets/images/review2.png";
@@ -15,10 +15,10 @@ function Hero({ recommenderName }) {
       <div className="container flex">
         <div className={styles.heroContent}>
           <div className={styles.heroContentColumn}>
-            <p className={styles.recommendation}>
-              <img src={iconHeart} alt="icon heart" />
+            <div className={styles.recommendation}>
+              <IconHeart />
               Poleca <b>{recommenderName}</b>
-            </p>
+            </div>
             <h1>
               Odbierz <br />
               Darmowy Trening<span className="blue">.</span>
@@ -39,7 +39,7 @@ function Hero({ recommenderName }) {
                   <span className={styles.ratingStars}>★★★★★</span>
                 </div>
                 <div className={styles.ratingRow}>
-                  <img src={iconGoogle} alt="icon Google" />
+                  <LogoGoogle />
                   <p className={styles.ratingRevies}>79 opinii</p>
                 </div>
               </div>
