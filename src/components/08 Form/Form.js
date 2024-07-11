@@ -65,14 +65,24 @@ function Form() {
                 </div>
                 <div class="ml-form-successBody row-success" style="display: none">
                   <div class="ml-form-successContent">
-                    <h4>Thank you!</h4>
-                    <p>You have successfully joined our subscriber list.</p>
+                    <h4>Dziękujemy!</h4>
+                    <p>Dziękujemy! Dołączyłeś do naszej listy subskrybentów.</p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         `;
+
+        const form = formContainer.querySelector(".ml-block-form");
+        form.addEventListener("submit", (e) => {
+          e.preventDefault();
+          setTimeout(() => {
+            document.querySelector(".ml-form-embedBody").style.display = "none";
+            document.querySelector(".ml-form-successBody").style.display =
+              "block";
+          }, 1000);
+        });
       };
     };
     document.body.appendChild(script);
