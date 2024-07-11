@@ -30,17 +30,20 @@ function Form() {
                     <div class="ml-form-formContent">
                       <div class="ml-form-fieldRow">
                         <div class="ml-field-group ml-field-name">
-                          <input aria-label="name" type="text" class="form-control" name="fields[name]" placeholder="Imię" autocomplete="given-name">
+                          <input aria-label="name" type="text" class="form-control" name="fields[name]" placeholder=" " autocomplete="given-name">
+                          <label for="fields[name]">Imię</label>
                         </div>
                       </div>
                       <div class="ml-form-fieldRow">
                         <div class="ml-field-group ml-field-email ml-validate-email ml-validate-required">
-                          <input aria-label="email" aria-required="true" type="email" class="form-control" name="fields[email]" placeholder="Email" autocomplete="email">
+                          <input aria-label="email" aria-required="true" type="email" class="form-control" name="fields[email]" placeholder=" " autocomplete="email">
+                          <label for="fields[email]">Email</label>
                         </div>
                       </div>
                       <div class="ml-form-fieldRow ml-last-item">
                         <div class="ml-field-group ml-field-phone ml-validate-required">
-                          <input aria-label="phone" aria-required="true" type="text" class="form-control" name="fields[phone]" placeholder="Numer telefonu">
+                          <input aria-label="phone" aria-required="true" type="text" class="form-control" name="fields[phone]" placeholder=" ">
+                          <label for="fields[phone]">Numer telefonu</label>
                         </div>
                       </div>
                     </div>

@@ -177,13 +177,16 @@
 }
 
 .ml-form-embedWrapper .ml-block-form .ml-field-group label {
-  margin-bottom: 5px;
-  color: #333333;
-  font-size: 14px;
-  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
-  font-weight: bold;
-  display: inline-block;
+  display: block;
+  margin-bottom: 12px;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: 'GeneralSans-Medium', sans-serif;
   line-height: 20px;
+  text-align: left;
+  color: #FFFFFFB2;
+  margin-bottom: 0;
+  
 }
 
 .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedContent p:last-child,
@@ -201,7 +204,6 @@
 .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow {
   margin: 0 0 20px 0;
   width: 100%;
-
   display: flex;
   flex-wrap: wrap;
   gap: 32px;
@@ -241,7 +243,7 @@
 
 .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow input {
   width: 100%;
-  padding: 14px 15px;
+  padding: 24px 15px 8px;
   font-size: 1em;
   border: none;
   border-radius: 5px;
@@ -717,6 +719,45 @@
   color: #ff0000 !important;
 }
 
+.ml-field-group {
+  position: relative;
+}
+
+.ml-field-group input {
+  width: 100%;
+  padding: 0.75rem 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.ml-field-group input:focus {
+  border-color: #007bff;
+}
+
+.ml-field-group label {
+  position: absolute;
+  top: 21px;
+  left: 16px;
+  pointer-events: none;
+  transition: all 0.3s;
+  transform: translateY(0);
+}
+
+.ml-field-group input:not(:placeholder-shown) + label,
+.ml-field-group input:focus + label {
+  transform: translateY(-12px);
+  font-size: 14px!important;
+  color: #BDBDBDB2!important;
+}
+
+.ml-field-group input:focus + label {
+  color: #007bff;
+}
+
+
 @media only screen and (max-width: 1024px){
     .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow:nth-child(1),
     .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow:nth-child(2) {
@@ -825,3 +866,5 @@
 .customForm .ml-form-embedSubmit button:hover {
   background-color: #132f91 !important;
 }
+
+
