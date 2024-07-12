@@ -133,6 +133,7 @@
   letter-spacing: -0.02em;
   text-align: center;
   color: #fff;
+  margin-bottom: 30px;
 }
 
 .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedContent p,
@@ -767,14 +768,12 @@
 
 @media only screen and (max-width: 768px){
     .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedContent h4, .ml-form-embedWrapper .ml-form-successBody .ml-form-successContent h4 {
-        text-align: left;
         font-size: 36px;
         line-height: 43.2px;
         margin-bottom: 30px;
     }
 
     .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedContent p, .ml-form-embedWrapper .ml-form-successBody .ml-form-successContent p {
-        text-align: left;
         font-size: 16px;
         line-height: 21.6px;
         padding-top: 5px;

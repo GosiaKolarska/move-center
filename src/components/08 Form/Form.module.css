@@ -7,6 +7,10 @@
     color: white;
     text-align: center;
     background-repeat: no-repeat;
+
+    min-height: 610px;
+    display: flex;
+    align-items: center;
   }
   
   .overlay {
@@ -140,6 +144,7 @@
   @media screen and (max-width: 768px) {
     .formSection {
       padding: 124px 30px 56px;
+      min-height: 805px;
     }
 
     .formGroup:nth-child(1),

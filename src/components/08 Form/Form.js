@@ -69,7 +69,7 @@ function Form() {
                 <div class="ml-form-successBody row-success" style="display: none">
                   <div class="ml-form-successContent">
                     <h4>Dziękujemy!</h4>
-                    <p>Dziękujemy! Dołączyłeś do naszej listy subskrybentów.</p>
+                    <p>Wkrótce się z Tobą skontaktujemy.</p>
                   </div>
                 </div>
               </div>
